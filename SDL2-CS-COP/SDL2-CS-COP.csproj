@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06E25768-5EF0-487F-B6D0-0FF3C931CCF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SDL2CSCOP</RootNamespace>
+    <AssemblyName>SDL2-CS-COP</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Applicator.cs" />
+    <Compile Include="Component.cs" />
+    <Compile Include="ComponentSet.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="ICOP_System.cs" />
+    <Compile Include="ProcessCalls.cs" />
+    <Compile Include="World.cs" />
+    <Compile Include="StandardItems\Components\Area.cs" />
+    <Compile Include="StandardItems\Components\Position.cs" />
+    <Compile Include="StandardItems\Components\Sprite.cs" />
+    <Compile Include="StandardItems\Components\Velocity.cs" />
+    <Compile Include="StandardItems\Systems\MovementSystem.cs" />
+    <Compile Include="StandardItems\Systems\SpriteRenderer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="StandardItems\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SDL2-CS-Bridge\SDL2-CS-Bridge.csproj">
+      <Project>{CD655906-AFF7-4046-9AA5-856FF2D16489}</Project>
+      <Name>SDL2-CS-Bridge</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
