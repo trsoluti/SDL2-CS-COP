@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Doxyfile = Doxyfile
 		README.md = README.md
+		SDL2-CS-COP.sln = SDL2-CS-COP.sln
+		LICENSE = LICENSE
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test-SDL2-CS", "Test-SDL2-CS\Test-SDL2-CS.csproj", "{97D7C83C-6633-40C4-83D1-9E58ED8AF3A5}"
