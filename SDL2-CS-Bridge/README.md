@@ -2,7 +2,7 @@
 
 This is SDL2-CS-Bridge, a hardware abstraction layer between SDL2-CS and SDL2-CS-COP
 
-Project Website: https://github.com/x/SDL2-CS-COP
+Project Website: https://github.com/trsoluti/SDL2-CS-COP
 
 License
 -------

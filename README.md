@@ -2,7 +2,7 @@
 
 This is SDL2-CS-COP, a Component-Oriented Programming model built on SDL2
 
-Project Website: https://github.com/x/SDL2-CS-COP
+Project Website: https://github.com/trsoluti/SDL2-CS-COP
 
 License
 -------
@@ -69,6 +69,7 @@ First off, you need to download and install the SDK binaries for your platform:
 - SDL2_ttf
 
 Then you need to download and install SDL2# (a.k.a.SDL2-CS).
+This can be found at https://github.com/flibitijibibo/SDL2-CS .
 
 You need to configure the SDL2-CS.dll.config so it can load your SDL2 libraries.
 
@@ -87,4 +88,4 @@ Documentation
 The PySDL documentation (http://pysdl2.readthedocs.org) is essential for understanding how to program using a COP system.
 
 The source code is heavily documented with C# XML comments.
-You can extract these comments and build your own documentation if you know how.
+You can extract these comments and build your own documentation using the supplied doxygen file.
